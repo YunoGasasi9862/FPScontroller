@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546865856}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.34, z: 0}
+  m_LocalPosition: {x: 0, y: 0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -415,10 +415,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1571528162}
   groundcheck: {fileID: 546865857}
-  GroundDistance: 0.4
+  GroundDistance: 1
   groundmask:
     serializedVersion: 2
-    m_Bits: 2147483647
+    m_Bits: 64
+  jumpheight: 500
 --- !u!1 &1892033649
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,7 +515,7 @@ GameObject:
   - component: {fileID: 2058811298}
   - component: {fileID: 2058811297}
   - component: {fileID: 2058811296}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}

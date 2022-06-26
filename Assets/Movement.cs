@@ -13,7 +13,7 @@ public class Movement : MonoBehaviour
    public Transform groundcheck;
     public float GroundDistance = 0.4f;
     public LayerMask groundmask;
-    public float jumpheight;
+    public float jumpheight=3f;
    
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpheight * -2f * gravity);
         }
 
-        velocity.y += gravity;
+        velocity.y += gravity * Time.deltaTime; //why did i forget to add Time.deltatime??
         controller.Move(velocity * Time.deltaTime);
     }
 }
